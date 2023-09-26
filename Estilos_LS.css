@@ -1,20 +1,4 @@
-.texto{
-	font-size:18pt;
-	font-weight: bold;
-	background:url() top center no-repeat;
-	-webkit-text-fill-color:white;
-    -webkit-text-stroke: 1pt black;
-}
-
-.boton{
-	font-size:30pt;
-	font-weight: bold;
-	color: white;
-	background: #ec5e0c;
-	border-radius: 7px;	
-}
-
-.encabezado_01{
+.encabezado_L1{
 	color: white;
 	font-size: 30px;
 	font-weight: bold;
@@ -24,7 +8,7 @@
 	border-radius: 15px;
 }
 
-.encabezado_02{
+.encabezado_L2{
 	background:url(../images/h1-wood.png) top center no-repeat;
 	background-size:contain;
 	height:50px;
@@ -51,7 +35,25 @@
 	font-weight: bold; 
 }
 
-.boton_01{
+.texto{
+	font-size:18pt;
+	font-weight: bold;
+	background:url() top center no-repeat;
+	-webkit-text-fill-color:white;
+    -webkit-text-stroke: 1pt black;
+}
+
+
+
+.boton{
+	font-size:30pt;
+	font-weight: bold;
+	color: white;
+	background: #ec5e0c;
+	border-radius: 7px;	
+}
+
+.boton_L1{
 	color: white;
 	font-size:14pt;
 	font-weight: bold;
@@ -62,7 +64,7 @@
 	border-radius: 15px;
 }
 
-.boton_01:hover{
+.boton_L1:hover{
 	color: #ec5e0c;
 	background: white;
 }

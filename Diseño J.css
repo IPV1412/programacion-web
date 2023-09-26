@@ -1,4 +1,4 @@
-.encabezado_01{
+.encabezado_J1{
     color: white;
     font-size: 40pt;
     font-weight: bold;
@@ -8,7 +8,7 @@
     border-radius: 15px;
 }
 
-.encabezado_02{
+.encabezado_J2{
     color: white;
     font-size: 18pt;
     font-weight: bold;
@@ -18,7 +18,18 @@
     border-radius: 15px;
 }
 
-.boton_01{
+.encabezado_J3{
+    color: black;
+    font-size: 15pt;
+    font-weight: bold;
+    font-family: broadway;
+    background: white;
+    border-radius: 10px;
+}
+
+
+
+.boton_J1{
     color: white;
     font-size: 14pt;
     font-weight: bold;
@@ -29,21 +40,13 @@
     border-radius: 15px;
 }
 
-.boton_01:hover{
+.boton_J1:hover{
     color: black;
     background-color: white;
 }
 
-.encabezado_03{
-    color: black;
-    font-size: 15pt;
-    font-weight: bold;
-    font-family: broadway;
-    background: white;
-    border-radius: 10px;
-}
 
-.table_01{
+.table_J1{
     font-weight:bold ;
     font-family: broadway;
     border-radius: 4px;
