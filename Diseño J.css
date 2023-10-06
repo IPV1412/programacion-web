@@ -29,19 +29,21 @@
 
 
 
+
 .boton_J1{
-    color: white;
+    text-align:center;
+    color: rgb(255, 115, 0);
     font-size: 14pt;
     font-weight: bold;
     font-family: broadway;
     background-color: rgb(8, 8, 8);
     width: 200px;
-    height: 70px;
+    height: 30px;
     border-radius: 15px;
 }
 
 .boton_J1:hover{
-    color: black;
+    color: rgb(81, 0, 0);
     background-color: white;
 }
 
