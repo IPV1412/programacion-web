@@ -104,6 +104,21 @@
     transform: scale(1.5);
 }
 
+.letrero1 {
+    font-size: 18px;
+    color: #f07000;
+    text-align: center;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.letrero1:hover {
+    color: #ffffff;
+    transform: scale(1.5);
+	border: #000000;
+	box-shadow: #ec5e0c;
+	background: #f07000;
+}
 
 .boton{
 	font-size:30pt;
