@@ -1,0 +1,84 @@
+.encabezado_01{
+    color: white;
+    font-size:24pt; /*pt, px, em (M), cm */
+    font-weight: bold;
+    font-family: broadway;
+    background: #09BABF;
+    width: 80%;
+    border-radius: 15px;
+}
+
+.encabezado_02{
+    color: white;
+    font-size:18pt;
+    font-weight: bold;
+    font-family: broadway;
+    background: #09BABF;
+    width: 70%;
+    border-radius: 15px;
+}
+
+.boton_01{
+    color: white;
+    font-size:14pt;
+    font-weight: bold;
+    font-family: broadway;
+    background: #09BABF;
+    width: 200px;
+    height: 70px;
+    border-radius: 15px;
+}
+
+.boton_01:hover{
+    color: #09BABF;
+    background: white;
+}
+
+.texto{
+    font-size:16pt;
+    font-weight: bold;
+    color: #73c9ee;
+}
+
+.campo{
+    font-size:16pt;
+    font-weight: bold;
+    color: white;
+    background: #c09ceb;
+    text-align:center;
+    border-radius: 7px;
+}
+
+.boton{
+    font-size:16pt;
+    font-weight: bold;
+    color: white;
+    background: #ff6701;
+    border-radius: 7px;	
+}
+
+.tabla{
+    background: #09BABF;
+    width: 80%;
+}
+
+.modal-background {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}

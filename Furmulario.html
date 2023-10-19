@@ -1,0 +1,247 @@
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href= "1a-swt.png" rel="icon" type="imagenes/jpg">
+    <link href= "Diseño J.css" rel="stylesheet" type="text/css">
+    <link href= "Tablas.css" rel="stylesheet" type="text/css">
+    <script src="Empresa.js" type="text/JavaScript"></script>
+    <title>Formularios, tablas y listas</title>
+</head>
+<body background="caida.gif">
+    <script>
+       function mostrarVentanaEmergente(id) {
+            document.getElementById("modal-background" + id).style.display = "block";
+            document.getElementById("modal-content" + id).style.display = "block";
+        }
+
+        function cerrarVentanaEmergente(id) {
+            document.getElementById("modal-background" + id).style.display = "none";
+            document.getElementById("modal-content" + id).style.display = "none";
+        }
+    </script>
+
+    <center>
+        <p class="encabezado_J1"> Formularios, tablas y listas </p>
+        <p class="encabezado_J2"> Trabajo en clase #8: Listas, tablas y formularios </p>
+        <br>
+        <br>
+		<table border="4" width="80%" background="estrellas.jpg">
+			<form name="UNIAT">
+				<tr>
+					<td> <p class="texto">Indica tu nombre</p> </td>
+					<td align="center"> <font size="4" color="red">*</font> <input name="nom" type="text" class="campo"> </td>
+					<td><center> <p class="texto">Se usa el input tipo text y permite capturar texto</p></center> </td>
+				</tr>
+                <tr align="center">
+                    <td><p class="texto">Apellido Paterno</p></td>
+                    <td> <font size="4" color="red">*</font> <input name="ap" type="text" class="campo"> </td>
+                    <td><center> <p class="texto">Se usa el input tipo text y permite capturar texto</p></center> </td>
+                </tr>
+                <tr align="center">
+                    <td><p class="texto">Apellido Materno</p></td>
+                    <td> <font size="4" color="red">*</font> <input name="am" type="text" class="campo"> </td>
+                    <td><center> <p class="texto">Se usa el input tipo text y permite capturar texto</p></center> </td>
+                </tr>
+				<tr>
+					<td> <p class="texto">Indica tu contraseña</p> </td>
+					<td align="center"> <input name="contra" type="password" class="campo"> </td>
+					<td><center> <p class="texto">Se usa el input tipo password y permite capturar texto <br> sin que se vea en la pantalla </p></center> </td>
+				</tr>
+				<tr>
+					<td> <p class="texto">Indica tu edad</p> </td>
+					<td align="center"> <input name="edad" type="number" class="campo" step="1" min="1" max="100"> </td>
+					<td><center> <p class="texto">Se usa el input tipo number y permite capturar sólo números </p> </center></td>
+				</tr>
+				<tr>
+					<td> <p class="texto">Indica tu fecha de nacimiento</p> </td>
+					<td align="center"> <input name="fec_nac" type="date" class="campo" value="2004-10-13" min="1900-12-25" max="2020-1-1"> </td>
+					<td> <center><p class="texto">Se usa el input tipo date y permite capturar una fecha </p></center> </td>
+				</tr>
+				<tr>
+					<td> <p class="texto">Indica tu color favorito</p> </td>
+					<td align="center"> <input name="color_fav" type="color" class="campo"> </td>
+					<td><center><p class="texto">Se usa el input tipo color y permite capturar un color </p></center> </td>
+				</tr>
+				<tr>
+					<td> <p class="texto">Indica tu nacionalidad</p> </td>
+					<td align="center"> 
+						<table width="100%">
+							<tr>
+								<td align="center"><input name="nal" type="radio"></td>
+								<td><p class="texto"> Mexicano </p></td>
+							</tr>
+							<tr>
+								<td align="center"><input name="nal" type="radio"></td>
+								<td><p class="texto"> Canandiense </p></td>
+							</tr>
+							<tr>
+								<td align="center"><input name="nal" type="radio"></td>
+								<td><p class="texto"> Frances </p></td>
+							</tr>
+							<tr>
+								<td align="center"><input name="nal" type="radio"></td>
+								<td><p class="texto"> Español </p></td>
+							</tr>
+                            <tr>
+								<td align="center"><input name="nal" type="radio"></td>
+								<td><p class="texto"> Estadunidense </p></td>
+							</tr>
+						</table>
+					</td>
+					<td><center> <p class="texto">Se usa el input tipo radio </p></center> </td>
+				</tr>
+				<tr>
+					<td> <p class="texto">Indica tus animales favoritos</p> </td>
+					<td align="center"> 
+						<table width="100%">
+							<tr>
+								<td align="center"><input name="animal1" type="checkbox"></td>
+								<td><p class="texto"> Perro </p></td>
+                                <td>
+                                    <img src="perro.jpg" width="60px" height="60px" alt="Imagen" onclick="mostrarVentanaEmergente(1)">
+                                    <div class="modal-background" id="modal-background1"></div>
+                                    <div class="modal-content" id="modal-content1">
+                                        <table class="tabla" border="3">
+                                            <tr align="center">
+                                                <td rowspan="4"> <img src="perro.jpg" width="300" height="350"> </td>
+                                                <td><font size=5 color="white"><b>Perro</b></font></td>
+                                            </tr>
+                                            <tr align="center">
+                                                <td><font size=4 color="white"><u>Carnivoros/Omnívoros</u></font></td>
+                                            </tr>
+                                            <tr align="center">
+                                                <td><font size=4 color="white"><u>Domesticos</u></font></td>
+                                            </tr>
+                                            <tr align="center">
+                                                <td><button class="boton_01" onclick="cerrarVentanaEmergente(1)">Cerrar</button></td>
+                                            </tr>
+                                        </table>                        
+                                    </div>
+                                </td>
+							</tr>
+							<tr>
+								<td align="center"><input name="animal2" type="checkbox"></td>
+								<td><p class="texto"> Gato </p></td>
+                                <td>
+                                    <img src="gato.jpg" width="55px" height="55px" alt="Imagen" onclick="mostrarVentanaEmergente(2)">
+                                    <div class="modal-background" id="modal-background2"></div>
+                                    <div class="modal-content" id="modal-content2">
+                                        <table class="tabla" border="3">
+                                            <tr align="center">
+                                                <td rowspan="4"> <img src="gato.jpg" width="320" height="300"> </td>
+                                                <td><font size=5 color="white"><b>Gato</b></font></td>
+                                            </tr>
+                                            <tr align="center">
+                                                <td><font size=4 color="white"><u>Carnivoros/Omnívoros</u></font></td>
+                                            </tr>
+                                            <tr align="center">
+                                                <td><font size=4 color="white"><u>Domesticos</u></font></td>
+                                            </tr>
+                                            <tr align="center">
+                                                <td><button class="boton_01" onclick="cerrarVentanaEmergente(2)">Cerrar</button></td>
+                                            </tr>
+                                        </table>                        
+                                    </div>
+                                </td>
+							</tr>
+							<tr>
+								<td align="center"><input name="animal3" type="checkbox"></td>
+								<td><p class="texto"> Perico </p></td>
+                                <td>
+                                    <img src="loro.jpg" width="50px" height="70px" alt="Imagen" onclick="mostrarVentanaEmergente(3)">
+                                    <div class="modal-background" id="modal-background3"></div>
+                                    <div class="modal-content" id="modal-content3">
+                                        <table class="tabla" border="3">
+                                            <tr align="center">
+                                                <td rowspan="4"> <img src="loro.jpg" width="170" height="300"> </td>
+                                                <td><font size=5 color="white"><b>Loro</b></font></td>
+                                            </tr>
+                                            <tr align="center">
+                                                <td><font size=4 color="white"><u>Omnívoros/Paleolítica</u></font></td>
+                                            </tr>
+                                            <tr align="center">
+                                                <td><font size=4 color="white"><u>Jungla</u></font></td>
+                                            </tr>
+                                            <tr align="center">
+                                                <td><button class="boton_01" onclick="cerrarVentanaEmergente(3)">Cerrar</button></td>
+                                            </tr>
+                                        </table>                        
+                                    </div>
+                                </td>
+							</tr>
+							<tr>
+								<td align="center"><input name="animal4" type="checkbox"></td>
+								<td><p class="texto"> León </p></td>
+                                <td>
+                                    <img src="leon.jpg" width="70px" height="50px" alt="Imagen" onclick="mostrarVentanaEmergente(4)">
+                                    <div class="modal-background" id="modal-background4"></div>
+                                    <div class="modal-content" id="modal-content4">
+                                        <table class="tabla" border="3">
+                                            <tr align="center">
+                                                <td rowspan="4"> <img src="leon.jpg" width="400" height="300"> </td>
+                                                <td><font size=5 color="white"><b>Leon</b></font></td>
+                                            </tr>
+                                            <tr align="center">
+                                                <td><font size=4 color="white"><u>Carnivoros</u></font></td>
+                                            </tr>
+                                            <tr align="center">
+                                                <td><font size=4 color="white"><u>Savana</u></font></td>
+                                            </tr>
+                                            <tr align="center">
+                                                <td><button class="boton_01" onclick="cerrarVentanaEmergente(4)">Cerrar</button></td>
+                                            </tr>
+                                        </table>                        
+                                    </div>
+                                </td>
+							</tr>
+						</table>
+					</td>
+					<td> <center><p class="texto">Se usa el input tipo checkbox </p><center> </td>
+				</tr>
+				<tr>
+					<td><p class="texto">Indica tu carrera</p></td>
+					<td align="center">
+						<select name="carrera" class="campo">
+							<option>IPV</option>
+							<option>LCA</option>
+							<option>LDAV</option>
+							<option>LA3D</option>
+                            <option>MAP</option>
+                            <option>LA3D</option>
+                            <option>MVA</option>
+                            <option>MDDIV</option>
+                            <option>MCS</option>
+						</select>
+					</td>
+					<td><center><p class="texto">Se usa el select y el option</p></center></td>
+				</tr>
+                <tr align="center">
+                    <td><p class="texto">Correo electronico</p></td>
+                    <td><input name="salida" type="text" class="campo" disabled="true" style="background: rgb(25, 1, 113);"></td>
+                    <td><center> <p class="texto">Creamos tu correo electronico apartir de los datos que introduzcas </p></center> </td>
+                </tr>
+				<tr>
+					<td><p class="texto">Indica tus comentarios</p></td>
+					<td align="center"><textarea name="comentarios" class="campo" rows="3" style="text-align: left;"></textarea></td>
+                    <td><center> <p class="texto">Solo es un input de texto y ya XD </p></center> </td>
+				</tr>
+				<tr>
+					<td colspan="3">
+					<table width="100%">
+						<tr align="center">
+							<td><input name="Ejecutar" type="button" class="boton"  value="Ejecutar" onclick="ejecuta()"></td>
+							<td><input name="Reiniciar" type="reset" class="boton" value="Reiniciar" style="background:red;">
+							</td>
+						</tr>
+					</table>
+					</td>
+				</tr>
+			</form>
+		</table>
+        <br> <br> <br> <br>
+        <img data-attachment-id="226" data-permalink="http://cinde.es/blog/lenguajes-de-programacion-cuando-como-y-porque/giphy/" data-orig-file="https://i0.wp.com/cinde.es/blog/wp-content/uploads/2017/10/giphy.gif?fit=500%2C281" data-orig-size="500,281" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="giphy" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/cinde.es/blog/wp-content/uploads/2017/10/giphy.gif?fit=300%2C169" data-large-file="https://i0.wp.com/cinde.es/blog/wp-content/uploads/2017/10/giphy.gif?fit=500%2C281" loading="lazy" class="aligncenter size-full wp-image-226" src="https://i0.wp.com/cinde.es/blog/wp-content/uploads/2017/10/giphy.gif?resize=500%2C281" alt="Código Binario" width="500" height="281" data-recalc-dims="1">
+    </center>
+</body>
+</html>
